@@ -836,7 +836,7 @@
       "x86":{
         "rule_type": "css-html-version",
         "selector": "#content > h3:nth-child(8)",
-        "baselink": "http://downloads.sourceforge.net/project/winscp/WinSCP/{{.version}}/WinSCP-{{.version}}-Setup.exe"
+        "baselink": "https://downloads.sourceforge.net/project/winscp/WinSCP/{{.version}}/WinSCP-{{.version}}-Setup.exe"
       }
     },
     "version_extractor": "([.\\d]+[.]\\d{1,5})"
