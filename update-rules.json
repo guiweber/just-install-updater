@@ -899,5 +899,16 @@
       }
     },
 	"version_extractor": "([.\\d]+[.]\\d{1,5})"
+  },
+    "lockhunter": {
+     "url": "http://lockhunter.com/download.htm",
+     "updater": {
+      "x86":{
+        "rule_type": "css-html-version",
+        "selector": ".download_comment",
+		"baselink": "http://lockhunter.com/exe/lockhuntersetup_{{.version-}}.exe"
+      }
+    },
+	"version_extractor": "([.\\d]+[.]\\d{1,5})"
   }
   }
