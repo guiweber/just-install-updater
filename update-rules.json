@@ -910,5 +910,15 @@
       }
     },
 	"version_extractor": "([.\\d]+[.]\\d{1,5})"
+  },
+     "obs-studio": {
+     "url": "https://obsproject.com/download",
+     "updater": {
+      "x86":{
+        "rule_type": "css-link",
+        "selector": "[href$='Full-Installer.exe']"
+      }
+    },
+	"version_extractor": "([.\\d]+[.]\\d{1,5})"
   }
   }
