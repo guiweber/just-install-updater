@@ -920,5 +920,15 @@
       }
     },
 	"version_extractor": "([.\\d]+[.]\\d{1,5})"
+  },
+     "colemak": {
+     "url": "https://colemak.com/Windows",
+     "updater": {
+      "x86":{
+        "rule_type": "css-link",
+        "selector": "[href$='Caps-Lock-Unchanged.zip']"
+      }
+    },
+	"version_extractor": "([.\\d]+[.]\\d{1,5})"
   }
   }
