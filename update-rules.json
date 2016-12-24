@@ -850,5 +850,19 @@
       }
     },
     "version_extractor": "([0-9].[0-9]{1,4})"
+  },
+    "everything-search": {
+    "url": "https://www.voidtools.com/downloads/",
+    "updater": {
+      "x86":{
+        "rule_type": "css-link",
+        "selector": "a[href$='x86.Multilingual-Setup.exe']"
+      },
+      "x86_64":{
+        "rule_type": "css-link",
+        "selector": "a[href$='x64.Multilingual-Setup.exe']"
+      }
+    },
+    "version_extractor": "([.\\d]+[.]\\d{1,5})"
   }
   }
