@@ -841,7 +841,7 @@
     },
     "version_extractor": "([.\\d]+[.]\\d{1,5})"
   },
-       "processhacker": {
+     "processhacker": {
      "url": "http://processhacker.sourceforge.net/downloads.php",
      "updater": {
       "x86":{
@@ -889,5 +889,15 @@
       }
     },
     "version_extractor": "([.\\d]+[.]\\d{1,5})"
+  },
+  "sharex": {
+     "url": "https://github.com/ShareX/ShareX/releases/latest",
+     "updater": {
+      "x86":{
+        "rule_type": "css-link",
+        "selector": "[href$='setup.exe']"
+      }
+    },
+	"version_extractor": "([.\\d]+[.]\\d{1,5})"
   }
   }
