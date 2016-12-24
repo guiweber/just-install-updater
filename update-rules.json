@@ -930,5 +930,30 @@
       }
     },
 	"version_extractor": "([.\\d]+[.]\\d{1,5})"
+  },
+     "handbrake": {
+     "url": "https://handbrake.fr/downloads.php",
+     "updater": {
+      "x86":{
+        "rule_type": "css-link",
+        "selector": "[href$='i686-Win_GUI-1.exe']"
+      },
+	  "x86_64":{
+        "rule_type": "css-link",
+        "selector": "a[href$='x86_64-Win_GUI-1.exe']"
+      }
+    },
+	"version_extractor": "([.\\d]+[.]\\d{1,5})"
+  },
+     "windirstat": {
+     "url": "https://windirstat.net/download.html",
+     "updater": {
+      "x86":{
+        "rule_type": "css-html-version",
+        "selector": "li.download",
+		"baselink": "https://www.fosshub.com/WinDirStat.html/windirstat{{.version_}}_setup.exe"
+      }
+    },
+	"version_extractor": "([.\\d]+[.]\\d{1,5})"
   }
   }
