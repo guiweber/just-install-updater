@@ -864,5 +864,19 @@
       }
     },
     "version_extractor": "([.\\d]+[.]\\d{1,5})"
+  },
+      "mpc-hc": {
+    "url": "https://mpc-hc.org/downloads/",
+    "updater": {
+      "x86":{
+        "rule_type": "css-link",
+        "selector": "a[href$='.x86.exe']"
+      },
+      "x86_64":{
+        "rule_type": "css-link",
+        "selector": "a[href$='.x64.exe']"
+      }
+    },
+    "version_extractor": "([.\\d]+[.]\\d{1,5})"
   }
   }
