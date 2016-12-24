@@ -829,5 +829,16 @@
       }
     },
     "version_extractor": "^[0-9]{2}"
+  },
+     "winscp": {
+     "url": "https://winscp.net/eng/download.php",
+     "updater": {
+      "x86":{
+        "rule_type": "css-html-version",
+        "selector": "#content > h3:nth-child(8)",
+        "baselink": "https://downloads.sourceforge.net/project/winscp/WinSCP/{{.version}}/WinSCP-{{.version}}-Setup.exe"
+      }
+    },
+    "version_extractor": "([.\\d]+[.]\\d{1,5})"
   }
   }
