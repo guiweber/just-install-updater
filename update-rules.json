@@ -955,5 +955,21 @@
       }
     },
 	"version_extractor": "([.\\d]+[.]\\d{1,5})"
+  },
+     "sumatrapdf": {
+     "url": "http://filehippo.com/de/download_sumatrapdf/",
+     "updater": {
+      "x86":{
+        "rule_type": "css-html-version",
+        "selector": "#program-header-left-col > h1 > span:nth-child(2)",
+		"baselink": "https://www.sumatrapdfreader.org/dl/SumatraPDF-{{.version}}-install.exe"
+      },
+	  "x86_64":{
+        "rule_type": "css-html-version",
+        "selector": "#program-header-left-col > h1 > span:nth-child(2)",
+		"baselink": "https://www.sumatrapdfreader.org/dl/SumatraPDF-{{.version}}-64-install.exe"
+      }
+    },
+	"version_extractor": "([.\\d]+[.]\\d{1,5})"
   }
-  }
+ }
