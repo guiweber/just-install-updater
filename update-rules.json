@@ -936,11 +936,11 @@
      "updater": {
       "x86":{
         "rule_type": "css-link",
-        "selector": "[href$='i686-Win_GUI-1.exe']"
+        "selector": "[href$='i686-Win_GUI.exe']"
       },
 	  "x86_64":{
         "rule_type": "css-link",
-        "selector": "a[href$='x86_64-Win_GUI-1.exe']"
+        "selector": "a[href$='x86_64-Win_GUI.exe']"
       }
     },
 	"version_extractor": "([.\\d]+[.]\\d{1,5})"
