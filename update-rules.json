@@ -1001,5 +1001,16 @@
 		"baselink": "https://sourceforge.net/projects/veracrypt/files/VeraCrypt%20{{.version}}/VeraCrypt%20Setup%20{{version}}.exe/download"
       }
     },
-	"version_extractor": "([.\\d]+[.]\\d{1,5})"  }
+	"version_extractor": "([.\\d]+[.]\\d{1,5})"  
+	},
+	"openssh": {
+    "url": "https://www.mls-software.com/opensshd.html",
+    "updater": {
+      "x86":{
+        "rule_type": "css-link",
+        "selector": "[href$='.exe']"
+      }
+    },
+	"version_extractor": "([.\\d]+[.]\\d{1,5})"
+   }
  }
