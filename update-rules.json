@@ -1012,5 +1012,34 @@
       }
     },
 	"version_extractor": "([.\\d]+[.]\\d{1,5})"
-   }
+   },
+	"sublime-text-dev": {
+    "url": "https://www.sublimetext.com/3",
+    "updater": {
+      "x86":{
+        "rule_type": "css-link",
+        "selector": "#dl_win_32 > a:nth-child(1)"
+      },
+      "x86_64":{
+        "rule_type": "css-link",
+        "selector": "#dl_win_64 > a:nth-child(1)"
+      }
+    },
+    "version_extractor": "Sublime Text Build ([0-9]*)(?: x64)? Setup\\.exe$"
+  },
+  	"sublime-text": {
+    "url": "https://www.sublimetext.com/2",
+    "updater": {
+      "x86":{
+        "rule_type": "css-link",
+        "selector": "#dl_win_32 > a:nth-child(1)"
+      },
+      "x86_64":{
+        "rule_type": "css-link",
+        "selector": "#dl_win_64 > a:nth-child(1)"
+      }
+    },
+    "version_extractor": "([.\\d]+[.]\\d{1,5}[a-z])"
+  }
  }
+
