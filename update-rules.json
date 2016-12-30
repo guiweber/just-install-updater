@@ -1040,6 +1040,22 @@
       }
     },
     "version_extractor": "([.\\d]+[.]\\d{1,5}[a-z])"
+  },
+    "subversion": {
+    "url": "https://sliksvn.com/download/",
+    "updater": {
+      "x86":{
+        "rule_type": "css-html-version",
+		"baselink": "https://sliksvn.com/pub/Slik-Subversion-{{.version}}-win32.msi",
+        "selector": "div.actions"
+      },
+      "x86_64":{
+        "rule_type": "css-html-version",
+		"baselink": "https://sliksvn.com/pub/Slik-Subversion-{{.version}}-x64.msi",
+        "selector": "div.actions"
+      }
+    },
+    "version_extractor": "([.\\d]+[.]\\d){1,5}"
   }
  }
 
