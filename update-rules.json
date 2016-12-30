@@ -1056,6 +1056,21 @@
       }
     },
     "version_extractor": "([.\\d]+[.]\\d){1,5}"
+  },
+    "dependency-walker": {
+    "url": "http://www.dependencywalker.com",
+    "updater": {
+      "x86":{
+        "rule_type": "css-html-version",
+        "selector": "body > font > div",
+		"baselink": "http://www.dependencywalker.com/depends{{.version#}}_x86.zip"
+      },
+      "x86_64":{
+        "rule_type": "css-html-version",
+        "selector": "body > font > div",
+		"baselink": "http://www.dependencywalker.com/depends{{.version#}}_x64.zip"
+      }
+    },
+    "version_extractor": "([.\\d]+[.]\\d){1,5}"
   }
- }
-
+}
