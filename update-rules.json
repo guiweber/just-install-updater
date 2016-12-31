@@ -1072,5 +1072,19 @@
       }
     },
     "version_extractor": "([.\\d]+[.]\\d){1,5}"
+  },
+    "emacs": {
+    "url": "http://ftp.gnu.org/gnu/emacs/windows/",
+    "updater": {
+      "x86":{
+        "rule_type": "css-link",
+        "selector": "[href$='i686-w64-mingw32.zip']"
+      },
+      "x86_64":{
+        "rule_type": "css-link",
+        "selector": "[href$='x86_64-w64-mingw32.zip']"
+      }
+    },
+    "version_extractor": "([.\\d]+[.]\\d{1,5})([-]\\d)?"
   }
 }
