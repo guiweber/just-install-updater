@@ -1086,5 +1086,29 @@
       }
     },
     "version_extractor": "([.\\d]+[.]\\d{1,5})([-]\\d)?"
+  },
+    "cryptomator": {
+    "url": "https://cryptomator.org/de/downloads/",
+    "updater": {
+      "x86":{
+        "rule_type": "css-link",
+        "selector": "[href$='-x86.exe']"
+      },
+      "x86_64":{
+        "rule_type": "css-link",
+        "selector": "[href$='-x64.exe']"
+      }
+    },
+    "version_extractor": "([.\\d]+[.]\\d{1,5})"
+  },
+    "eig": {
+    "url": "https://api.github.com/repos/EvilInsultGenerator/c-sharp-desktop/releases/latest",
+    "updater": {
+      "x86":{
+        "rule_type": "json-link",
+        "selector": "browser_download_url"
+      }
+    },
+    "version_extractor": "v([.\\d]+[.]\\d{1,5})/EvilInsultGenerator_Setup.exe$"
   }
 }
