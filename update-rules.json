@@ -834,8 +834,8 @@
      "url": "https://winscp.net/eng/download.php",
      "updater": {
       "x86":{
-        "rule_type": "css-html-version",
-        "selector": "#content > h3:nth-child(8)",
+        "rule_type": "regexp-version",
+		"filter": "WinSCP ([.\\d]+[.]\\d{1,5})",
         "baselink": "https://downloads.sourceforge.net/project/winscp/WinSCP/{{.version}}/WinSCP-{{.version}}-Setup.exe"
       }
     },
