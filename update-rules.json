@@ -880,12 +880,11 @@
     "version_extractor": "([.\\d]+[.]\\d{1,5})"
   },
    "deluge": {
-    "url": "http://dev.deluge-torrent.org/wiki/Download",
+    "url": "http://download.deluge-torrent.org/windows/?C=N;O=D;F=0",
     "updater": {
       "x86":{
-        "rule_type": "css-html-version",
-        "selector": "#wikipage > p:nth-child(2)",
-		"baselink": "http://download.deluge-torrent.org/windows/deluge-{{.version}}-win32-py2.7-0.exe"
+        "rule_type": "regexp-link",
+		  "filter": "(?!\">) (deluge-([.\\d]+[.]\\d{1,5})-win32-py(.*).exe)"
       }
     },
     "version_extractor": "([.\\d]+[.]\\d{1,5})"
