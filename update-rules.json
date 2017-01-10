@@ -974,11 +974,13 @@
 	"version_extractor": "([.\\d]+[.]\\d{1,5})"
   },
    "kodi": {
-    "url": "https://kodi.tv/download",
+    "url": "http://mirrors.kodi.tv/releases/win32/",
     "updater": {
       "x86":{
-        "rule_type": "advanced"
-      }
+        "rule_type": "css-link",
+		"selector": "[href$='.exe']",
+		"filter": "-[a-zA-Z]*\\.exe$"
+		}
     },
 	"version_extractor": "([.\\d]+[.]\\d{1,5})"
    },
@@ -990,7 +992,7 @@
         "selector": "[href$='_Setup.exe']"
       }
     },
-	"version_extractor": "([.\\d]+[.]\\d{1,5})"
+	"version_extractor": "([.\\d]+[.]\\d{1,5})"	
    },
    "veracrypt": {
     "url": "https://sourceforge.net/projects/veracrypt/files/",
