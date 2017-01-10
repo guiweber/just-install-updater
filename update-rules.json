@@ -977,8 +977,7 @@
     "url": "https://kodi.tv/download",
     "updater": {
       "x86":{
-        "rule_type": "css-link",
-        "selector": "[href$='Jarvis.exe']"
+        "rule_type": "advanced"
       }
     },
 	"version_extractor": "([.\\d]+[.]\\d{1,5})"
