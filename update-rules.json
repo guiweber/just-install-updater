@@ -1214,7 +1214,7 @@
     "updater": {
       "x86": {
         "rule_type": "css-link",
-        "selector": "a[href$='.exe']"
+        "selector": "a[href$='exe']"
       },
       "x86_64": {
         "rule_type": "css-link",
