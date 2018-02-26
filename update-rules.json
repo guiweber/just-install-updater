@@ -907,6 +907,17 @@
     },
     "version_extractor": "npp\\.([0-9]*(?:\\.[0-9]+)*)\\."
   },
+  "notepad2-mod": {
+    "url": "https://xhmikosr.github.io/notepad2-mod/",
+    "updater": {
+      "x86": {
+        "rule_type": "css-html-version",
+		"selector": ".version",
+		"baselink": "https://github.com/XhmikosR/notepad2-mod/releases/download/{{.version}}/Notepad2-mod.{{.version}}.exe"
+      }
+    },
+    "version_extractor": "\\d+(?:\\.\\d+)+"
+  },
   "npackd": {
     "url": "https://api.github.com/repos/tim-lebedkov/npackd-cpp/releases/latest",
     "updater": {
