@@ -1468,6 +1468,22 @@
     },
     "version_extractor": "WebTorrentSetup-v([0-9]*(?:\\.[0-9]+)*[a-z]?)"
   },
+  "winrar": {
+    "url": "https://www.win-rar.com/download.html",
+    "updater": {
+      "x86": {
+        "rule_type": "css-html-version",
+		"selector": ".download-link",
+		"baselink": "https://rarlab.com/rar/wrar{{.version[0]}}{{.version[1]}}.exe"
+      },
+	  "x86_64": {
+		"rule_type": "css-html-version",
+		"selector": ".download-link",
+		"baselink": "https://rarlab.com/rar/winrar-x64-{{.version[0]}}{{.version[1]}}.exe"
+	  }
+    },
+    "version_extractor": "\\d+(?:\\.\\d+)+"
+  },
   "winscp": {
     "url": "https://sourceforge.net/projects/winscp/files/",
     "updater": {
