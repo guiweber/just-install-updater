@@ -267,6 +267,22 @@
     },
     "version_extractor": "([.\\d]+[.]\\d){1,5}"
   },
+  "ditto": {
+    "url": "http://ditto-cp.sourceforge.net/index.php",
+	"updater": {
+      "x86": {
+        "rule_type": "css-html-version",
+		"selector": "head > script",
+		"baselink": "https://downloads.sourceforge.net/project/ditto-cp/Ditto/{{.version}}/DittoSetup_{{.version_}}.exe"
+      },
+	  "x86_64": {
+		"rule_type": "css-html-version",
+		"selector": "head > script",
+		"baselink": "https://downloads.sourceforge.net/project/ditto-cp/Ditto/{{.version}}/DittoSetup_64bit_{{.version_}}.exe"
+	  }
+    },
+    "version_extractor": "\\d+(?:\\.\\d+)+"
+  },  
   "eac": {
     "url": "http://www.exactaudiocopy.de/en/index.php/weitere-seiten/download-from-alternative-servers-2/",
     "updater": {
