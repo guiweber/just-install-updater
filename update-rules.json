@@ -56,6 +56,22 @@
     },
     "version_extractor": "audacity-win-([0-9]*(?:\\.[0-9]+)*[a-z]?)\\.exe$"
   },
+  "bcc": {
+    "url": "https://api.github.com/repos/wormt/bcc/releases/latest",
+    "updater": {
+      "x86": {
+        "rule_type": "json-link",
+        "selector": "browser_download_url",
+        "filter": "-32bit\\.zip"
+      },
+      "x86_64": {
+        "rule_type": "json-link",
+        "selector": "browser_download_url",
+        "filter": "-64bit\\.zip"
+      }
+    },
+    "version_extractor": "bcc-([0-9]*(?:\\.[0-9]+)*[a-z]?)"
+  },
   "bcuninstaller": {
     "url": "https://api.github.com/repos/Klocman/Bulk-Crap-Uninstaller/releases",
     "updater": {
